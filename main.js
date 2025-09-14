@@ -21,13 +21,22 @@ const scene = new THREE.Scene()
 // Objects
 const geometry = new THREE.IcosahedronBufferGeometry(0.5);
 
-// Materials
+// Materials - SOLID VERSION
 
-const material = new THREE.MeshStandardMaterial()
-material.metalness = 0.6
-material.roughness = 0.4
-material.normalMap = normalTexture;
-material.color = new THREE.Color(0x292929)
+// const material = new THREE.MeshStandardMaterial()
+// material.metalness = 0.6
+// material.roughness = 0.4
+// material.normalMap = normalTexture;
+// material.color = new THREE.Color(0x292929)
+
+
+// Materials - WIREFRAME VERSION
+const material = new THREE.MeshBasicMaterial({
+    color: 0x4f8fe6,        // White wireframe color
+    wireframe: true,        // This enables wireframe mode
+    transparent: true,      // Optional: makes it slightly transparent
+    opacity: 0.8           // Optional: adjust transparency level
+})
 
 // Mesh
 const sphere = new THREE.Mesh(geometry, material)
