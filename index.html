@@ -4,36 +4,47 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-
-    <h1>William Wijaya</h1>
+    <div class="header-container">
+        <h1>William Wijaya 黄伟亮</h1>
+        <nav class="element-on-top">
+            <a href="index.html" class="link-item">Projects</a>
+            <a href="about.html" class="link-item">About</a>
+            <a href="contact.html" class="link-item">Contact</a>
+            <a href="https://github.com/WilliamSuper113" target="_blank" class="link-item">Github</a>
+        </nav>
+    </div>
     <hr>
 
     <p>
-        "I think, therefore I am" is a philosophical statement by <a
-            href="https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes">René Descartes</a>, suggesting that the very act of
-        thinking is proof of one's existence. Therefore for us to life we must first think, and what better way to think
-        than programming!
+        I craft wireframes that inspire wonder. This isn’t just a polygon—it’s a working prototype. I design user
+        experiences that are as structurally sound as this geometry and as clear as its lines. No filler, just
+        intentional design that guides users from point A to point B with clarity and purpose.
     </p>
-<!-- canvas --> 
+    <!-- canvas -->
 
-    <div style="margin-top:-4rem ;"> 
+    <div class="container">
+        <div class="right-column element-on-bottom">
+            <canvas class="webgl"></canvas>
+        </div>
+        <div class="left-column">
+            <div class="project-list">
+                <h3>Javascript</h3>
+                <p><a href="projects/Javascript Passenger Counter/passenger.html" target="_blank">Passenger counter
+                        app</a></p>
+                <p><a href="projects/WIP.html" target="_blank">Blackjack Game</a></p>
+                <p><a href="projects/WIP.html" target="_blank">Chrome Extension</a></p>
+            </div>
+        </div>
 
-        <canvas class="webgl center"></canvas> 
-
-    </div> 
-
-
- <ul>
-        <li><a href="projects/Javascript Passenger Counter/passenger.html" target="_blank">Passenger counter app</a>
-        </li>
-    </ul>
-
+    </div>
 </body>
 <!-- threeJS script -->
 <script type="module" src="main.js"></script>
