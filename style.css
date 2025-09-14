@@ -1,4 +1,10 @@
 body {
-    background-color: lightblue;
-    font-family: 'arial', sans-serif;
+    background-color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #0d2b52;
 }
