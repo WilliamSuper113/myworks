@@ -37,7 +37,7 @@ import * as THREE from 'https://unpkg.com/three@0.141.0/build/three.module.js';
     const renderer = new THREE.WebGLRenderer({
         canvas: canvas,
         alpha: true,
-        antialias: true
+        antialias: true,
     });
     
     // Setup camera
